@@ -8,7 +8,9 @@
 :root{
     --gray-800: #1E2938;
     --gray-600: #475569;
-    --puple: #7c3aed
+    --gray-400: #94a3b8;
+    --gray-200: #e2e8f0;
+    --puple: #7c3aed;
 }
 header{
     background-image: url(./imagens/bg-mobile.png);
@@ -33,13 +35,21 @@ main{
     font-size: 1.5625rem;
 }
 
-.input-box{
-    display: flex;
-    flex-direction: column;
-}
+
 .descricao p{
     font-size: 0.8125rem;
     color: var(--gray-600);
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.input-box div{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
 }
 
 .login label{
@@ -48,11 +58,23 @@ main{
     font-weight: 600;
 }
 
-.input-box div{
-    display: flex;
-    justify-content:space-between ;
-    align-items: center;
+.login input{
+    padding: 1rem 0.75rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.25rem ;
+    color: var(--gray-800);
+
 }
+
+.login input::placeholder{
+    color: var(--gray-400);
+}
+
+.login input:hover,
+.login input:focus{
+    outline: 1px solid var(--puple);
+}
+
 
 .login a{
     color: var(--puple);
@@ -64,3 +86,4 @@ main{
 .login a:hover{
     text-decoration: underline;
 }
+
