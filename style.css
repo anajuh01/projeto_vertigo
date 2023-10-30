@@ -8,6 +8,7 @@
 :root{
     --gray-800: #1E2938;
     --gray-600: #475569;
+    --puple: #7c3aed
 }
 header{
     background-image: url(./imagens/bg-mobile.png);
@@ -32,7 +33,34 @@ main{
     font-size: 1.5625rem;
 }
 
+.input-box{
+    display: flex;
+    flex-direction: column;
+}
 .descricao p{
     font-size: 0.8125rem;
     color: var(--gray-600);
+}
+
+.login label{
+    font-size: 0.875 rem;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+.input-box div{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+
+.login a{
+    color: var(--puple);
+    font-size: 0.875rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login a:hover{
+    text-decoration: underline;
 }
